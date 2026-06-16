@@ -1,0 +1,90 @@
+/* Article Body Styles — shared stylesheet for rendered article HTML */
+.article-content {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.article-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+  color: #1f2937;
+}
+
+.article-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+  color: #1f2937;
+}
+
+.article-content p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #2d6a4f;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: rgba(45, 106, 79, 0.05);
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.article-content strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.article-content a {
+  color: #2d6a4f;
+  text-decoration: underline;
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.article-content th,
+.article-content td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.article-content th {
+  background: #f0fdf4;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.article-content tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.article-content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.article-content em {
+  font-style: italic;
+  color: #6b7280;
+}
