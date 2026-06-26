@@ -14,6 +14,7 @@ export const siteConfig = {
     accent: "#d4a373",
   },
   categories: [
+    { key: "general", label: "General", description: "General RV tips, news, and community stories from the road." },
     { key: "destinations", label: "Destinations", description: "Discover the best RV-friendly destinations across North America — national parks, coastal routes, and hidden gems." },
     { key: "rv-reviews", label: "RV Reviews", description: "Honest, detailed reviews of motorhomes, travel trailers, fifth wheels, and camper vans from top manufacturers." },
     { key: "road-trips", label: "Road Trips", description: "Curated road trip itineraries with campground stops, fuel planning, and scenic highlights for RV travelers." },

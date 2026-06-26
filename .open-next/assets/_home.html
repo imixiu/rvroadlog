@@ -45,7 +45,7 @@
       --shadow: 0 2px 12px rgba(45,106,79,0.08);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+    body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; overflow-x: hidden; }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; height: auto; display: block; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
@@ -167,11 +167,13 @@
       .why-grid, .authors-grid { grid-template-columns: repeat(2, 1fr); }
       .hero-image { display: none; } .hero-content { max-width: 100%; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .site-header .main-nav { gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+      .site-header .main-nav a { font-size: 0.75rem; }
     }
     @media (max-width: 640px) {
       .topics-grid, .articles-grid, .why-grid, .authors-grid { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.2rem; }
-      .site-header .main-nav { gap: 16px; } .site-header .main-nav a { font-size: 0.8rem; }
+      .site-header .main-nav { gap: 8px; flex-wrap: wrap; justify-content: flex-end; } .site-header .main-nav a { font-size: 0.7rem; }
       .newsletter-form { flex-direction: column; }
     }
   </style>
@@ -225,12 +227,12 @@
       <h2 class="section-title">Latest Articles</h2>
       <p class="section-subtitle">Fresh content from our team of RV experts, road trippers, and outdoor enthusiasts.</p>
       <div class="articles-grid">
-        <a href="/destinations/best-national-parks-for-rv-camping" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/A145f67875eee40b9a6d5c8886d677a31R.jpg" alt="Best National Parks" width="400" height="200"><div class="article-card-body"><span class="tag">Destinations</span><h3>15 Best National Parks for RV Camping in 2026</h3><p>From Yellowstone to the Grand Canyon — our top picks with campground details.</p></div></a>
-        <a href="/rv-reviews/best-class-c-motorhomes" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/A8925c417b4a04061bfdd647424ecce2a2.jpg" alt="Class C Motorhomes" width="400" height="200"><div class="article-card-body"><span class="tag">RV Reviews</span><h3>8 Best Class C Motorhomes Under $120K: Tested and Ranked</h3><p>We tested drivability, living space, and fuel economy across all major brands.</p></div></a>
-        <a href="/road-trips/pacific-coast-highway-rv-itinerary" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/A90810ed051c84d2bac550ae29674da155.jpg" alt="Pacific Coast Highway" width="400" height="200"><div class="article-card-body"><span class="tag">Road Trips</span><h3>Pacific Coast Highway: The Ultimate 14-Day RV Itinerary</h3><p>Campgrounds, fuel stops, and must-see viewpoints from LA to Seattle.</p></div></a>
-        <a href="/camping-tips/boondocking-for-beginners" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/Aebcc09f385b2484ca58e3a3f3d44839dS.jpg" alt="Boondocking" width="400" height="200"><div class="article-card-body"><span class="tag">Camping Tips</span><h3>Boondocking 101: A Complete Beginner's Guide to Free Camping</h3><p>Everything you need to know about off-grid RV camping without hookups.</p></div></a>
-        <a href="/rv-lifestyle/full-time-rv-living-budget" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/Aae1b853bf5374651a65de5e1214c7112c.jpg" alt="Full-time RV Living" width="400" height="200"><div class="article-card-body"><span class="tag">Lifestyle</span><h3>Full-Time RV Living: What It Really Costs Per Month</h3><p>A transparent breakdown of our real expenses after 2 years on the road.</p></div></a>
-        <a href="/buying-guides/first-rv-buying-checklist" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/A69c2e90073254374ab01ea9ea689b322V.jpg" alt="RV Buying Guide" width="400" height="200"><div class="article-card-body"><span class="tag">Buying Guides</span><h3>Your First RV: The Complete Buying Checklist for Beginners</h3><p>Don't make these 12 common mistakes when purchasing your first rig.</p></div></a>
+        <a href="/destinations/what-do-reviews-say-about-buffalo-meadows-rv-park-reviews" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/A50ef256b1ca1487ab14196fa098c3216l.jpg" alt="Buffalo Meadows RV Park" width="400" height="200"><div class="article-card-body"><span class="tag">Destinations</span><h3>Buffalo Meadows RV Park Reviews: Real-World Truths</h3><p>What guests really say about this popular RV destination — the good, the bad, and the unexpected.</p></div></a>
+        <a href="/rv-reviews/what-should-i-know-about-camper-trailer-loan-terms" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/A31268710a0464805b43b21ce5da0ddd8g.jpg" alt="Camper Trailer Loans" width="400" height="200"><div class="article-card-body"><span class="tag">RV Reviews</span><h3>Camper Trailer Loan Terms: What RVers Really Need to Know</h3><p>Understanding interest rates, terms, and hidden costs before financing your next rig.</p></div></a>
+        <a href="/road-trips/what-should-i-know-about-build-a-driving-route" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/Ad80c09076640465c96ef20067d5d18fe2.jpg" alt="RV Driving Route" width="400" height="200"><div class="article-card-body"><span class="tag">Road Trips</span><h3>How to Build a Driving Route for RV Travel</h3><p>Plan the perfect RV road trip with smart routing, fuel stops, and campground waypoints.</p></div></a>
+        <a href="/camping-tips/how-should-i-properly-maintain-camco-tst-clean-scent-rv-toilet-treatment" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/Ac6197eee94bb47aaa2fabcd8cc653a510.jpg" alt="RV Toilet Treatment" width="400" height="200"><div class="article-card-body"><span class="tag">Camping Tips</span><h3>Camco TST Clean Scent RV Toilet Treatment Guide</h3><p>Keep your RV holding tank fresh with the right treatment routine and maintenance tips.</p></div></a>
+        <a href="/rv-lifestyle/what-should-i-know-about-camp-pro-2-wifi-booster" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/Aa08c439cc7bd4e388f6756b300809295R.jpg" alt="RV WiFi Booster" width="400" height="200"><div class="article-card-body"><span class="tag">Lifestyle</span><h3>Camp Pro 2 WiFi Booster: Truths, Myths & Fixes</h3><p>Stay connected on the road — real-world performance tested at 20+ campgrounds.</p></div></a>
+        <a href="/buying-guides/where-are-the-best-cabelas-dump-station-options-near-me" class="article-card"><img src="https://s.alicdn.com/@sc02/kf/A44c2587bbe3d4a64b13ccdf9f514902dN.jpg" alt="RV Dump Stations" width="400" height="200"><div class="article-card-body"><span class="tag">Buying Guides</span><h3>Best Cabela's Dump Station Options Near You</h3><p>Find reliable RV dump stations near Cabela's locations across the country.</p></div></a>
       </div>
     </div>
   </section>
@@ -260,17 +262,6 @@
         <a href="/author/david-chen" class="author-card"><img src="https://s.alicdn.com/@sc02/kf/Ad7631847602f430fa3aa363bc3a4227bj.jpg" alt="David Chen" width="80" height="80"><h4>David Chen</h4><p>Budget Advocate</p></a>
         <a href="/author/lisa-park" class="author-card"><img src="https://s.alicdn.com/@sc02/kf/A13b8da7b561f48999a2b8ed7fd830442m.jpg" alt="Lisa Park" width="80" height="80"><h4>Lisa Park</h4><p>Lifestyle Blogger</p></a>
         <a href="/author/mark-williams" class="author-card"><img src="https://s.alicdn.com/@sc02/kf/Ab630868fe9694ddeb315a8327f39c7d8K.jpg" alt="Mark Williams" width="80" height="80"><h4>Mark Williams</h4><p>Trip Planner</p></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="newsletter">
-    <div class="container">
-      <h2>Get Weekly RV Inspiration</h2>
-      <p>New routes, campground finds, and exclusive deals delivered to your inbox every week.</p>
-      <div class="newsletter-form">
-        <input type="email" placeholder="Enter your email" aria-label="Email">
-        <button type="button">Subscribe</button>
       </div>
     </div>
   </section>

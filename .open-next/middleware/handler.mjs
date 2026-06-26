@@ -127,9 +127,9 @@ var init_logger = __esm({
   }
 });
 
-// node_modules/@opennextjs/aws/node_modules/cookie/dist/index.js
+// node_modules/cookie/dist/index.js
 var require_dist = __commonJS({
-  "node_modules/@opennextjs/aws/node_modules/cookie/dist/index.js"(exports) {
+  "node_modules/cookie/dist/index.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.parseCookie = parseCookie;
@@ -711,29 +711,31 @@ var init_fetch = __esm({
   }
 });
 
-// .next/server/edge/chunks/node_modules_next_dist_esm_build_templates_edge-wrapper_0a9gg_0.js
-var require_node_modules_next_dist_esm_build_templates_edge_wrapper_0a9gg_0 = __commonJS({
-  ".next/server/edge/chunks/node_modules_next_dist_esm_build_templates_edge-wrapper_0a9gg_0.js"() {
-    "use strict";
-    (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/node_modules_next_dist_esm_build_templates_edge-wrapper_0a9gg_0.js", 38022, (e, t, l) => {
-      self._ENTRIES ||= {};
-      let n = Promise.resolve().then(() => e.i(42738));
-      n.catch(() => {
-      }), self._ENTRIES.middleware_middleware = new Proxy(n, { get(e2, t2) {
-        if ("then" === t2) return (t3, l3) => e2.then(t3, l3);
-        let l2 = (...l3) => e2.then((e3) => (0, e3[t2])(...l3));
-        return l2.then = (l3, n2) => e2.then((e3) => e3[t2]).then(l3, n2), l2;
-      } });
-    }]);
-  }
-});
-
 // node-built-in-modules:node:buffer
 var node_buffer_exports = {};
 import * as node_buffer_star from "node:buffer";
 var init_node_buffer = __esm({
   "node-built-in-modules:node:buffer"() {
     __reExport(node_buffer_exports, node_buffer_star);
+  }
+});
+
+// .next/server/edge/chunks/[root-of-the-server]__0dtnnx1._.js
+var require_root_of_the_server_0dtnnx1 = __commonJS({
+  ".next/server/edge/chunks/[root-of-the-server]__0dtnnx1._.js"() {
+    "use strict";
+    (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/[root-of-the-server]__0dtnnx1._.js", 51615, (e, r, t) => {
+      r.exports = e.x("node:buffer", () => (init_node_buffer(), __toCommonJS(node_buffer_exports)));
+    }, 38022, (e, r, t) => {
+      self._ENTRIES ||= {};
+      let n = Promise.resolve().then(() => e.i(42738));
+      n.catch(() => {
+      }), self._ENTRIES.middleware_middleware = new Proxy(n, { get(e2, r2) {
+        if ("then" === r2) return (r3, t3) => e2.then(r3, t3);
+        let t2 = (...t3) => e2.then((e3) => (0, e3[r2])(...t3));
+        return t2.then = (t3, n2) => e2.then((e3) => e3[r2]).then(t3, n2), t2;
+      } });
+    }]);
   }
 });
 
@@ -746,11 +748,11 @@ var init_node_async_hooks = __esm({
   }
 });
 
-// .next/server/edge/chunks/[root-of-the-server]__0_lzsr-._.js
-var require_root_of_the_server_0_lzsr = __commonJS({
-  ".next/server/edge/chunks/[root-of-the-server]__0_lzsr-._.js"() {
+// .next/server/edge/chunks/[root-of-the-server]__0az2aw2._.js
+var require_root_of_the_server_0az2aw2 = __commonJS({
+  ".next/server/edge/chunks/[root-of-the-server]__0az2aw2._.js"() {
     "use strict";
-    (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/[root-of-the-server]__0_lzsr-._.js", 74398, (e, t, r) => {
+    (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/[root-of-the-server]__0az2aw2._.js", 74398, (e, t, r) => {
     }, 28042, (e, t, r) => {
       "use strict";
       var n = Object.defineProperty, i = Object.getOwnPropertyDescriptor, a = Object.getOwnPropertyNames, o = Object.prototype.hasOwnProperty, s = {}, l = { RequestCookies: () => g, ResponseCookies: () => v, parseCookie: () => d, parseSetCookie: () => h, stringifyCookie: () => c };
@@ -2002,8 +2004,6 @@ var require_root_of_the_server_0_lzsr = __commonJS({
           }
         }, t.exports = u;
       })();
-    }, 51615, (e, t, r) => {
-      t.exports = e.x("node:buffer", () => (init_node_buffer(), __toCommonJS(node_buffer_exports)));
     }, 78500, (e, t, r) => {
       t.exports = e.x("node:async_hooks", () => (init_node_async_hooks(), __toCommonJS(node_async_hooks_exports)));
     }, 25085, (e, t, r) => {
@@ -4448,16 +4448,21 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
       }
       if (e.i(64445), e.i(40049).default.unstable_postpone, false === ("Route %%% needs to bail out of prerendering at this point because it used ^^^. React throws this special object to indicate where. It should not be caught by your own try/catch. Learn more: https://nextjs.org/docs/messages/ppr-caught-error".includes("needs to bail out of prerendering at this point because it used") && "Route %%% needs to bail out of prerendering at this point because it used ^^^. React throws this special object to indicate where. It should not be caught by your own try/catch. Learn more: https://nextjs.org/docs/messages/ppr-caught-error".includes("Learn more: https://nextjs.org/docs/messages/ppr-caught-error"))) throw Object.defineProperty(Error("Invariant: isDynamicPostpone misidentified a postpone reason. This is a bug in Next.js"), "__NEXT_ERROR_CODE", { value: "E296", enumerable: false, configurable: true });
       RegExp("\\n\\s+at Suspense \\(<anonymous>\\)(?:(?!\\n\\s+at (?:body|div|main|section|article|aside|header|footer|nav|form|p|span|h1|h2|h3|h4|h5|h6) \\(<anonymous>\\))[\\s\\S])*?\\n\\s+at __next_root_layout_boundary__ \\([^\\n]*\\)"), RegExp("\\n\\s+at __next_metadata_boundary__[\\n\\s]"), RegExp("\\n\\s+at __next_viewport_boundary__[\\n\\s]"), RegExp("\\n\\s+at __next_outlet_boundary__[\\n\\s]"), RegExp("\\n\\s+at __next_instant_validation_boundary__[\\n\\s]"), e.s(["config", 0, { matcher: ["/((?!api|_next|favicon|sitemap|robots|public|assets).*)"] }, "middleware", 0, function(e10) {
-        let { pathname: t10, searchParams: r2 } = e10.nextUrl, n2 = r2.get("page");
-        if (n2) {
-          let r3 = parseInt(n2, 10);
-          if (isNaN(r3) || r3 <= 1) {
-            let t11 = e10.nextUrl.clone();
-            return t11.searchParams.delete("page"), es.redirect(t11, 301);
+        let t10 = e10.headers.get("host") || "";
+        if (t10.startsWith("www.")) {
+          let r3 = e10.nextUrl.clone();
+          return r3.hostname = t10.slice(4), es.redirect(r3, 301);
+        }
+        let { pathname: r2, searchParams: n2 } = e10.nextUrl, i2 = n2.get("page");
+        if (i2) {
+          let t11 = parseInt(i2, 10);
+          if (isNaN(t11) || t11 <= 1) {
+            let t12 = e10.nextUrl.clone();
+            return t12.searchParams.delete("page"), es.redirect(t12, 301);
           }
-          if (r3 > 1) {
+          if (t11 > 1) {
             let n3 = e10.nextUrl.clone();
-            return n3.searchParams.delete("page"), n3.pathname = `${t10}/page/${r3}`, es.redirect(n3, 301);
+            return n3.searchParams.delete("page"), n3.pathname = `${r2}/page/${t11}`, es.redirect(n3, 301);
           }
         }
         return es.next();
@@ -4485,11 +4490,11 @@ Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime`;
   }
 });
 
-// .next/server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_09_s2fq.js
-var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09_s2fq = __commonJS({
-  ".next/server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_09_s2fq.js"() {
+// .next/server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0w_ovm7.js
+var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_0w_ovm7 = __commonJS({
+  ".next/server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0w_ovm7.js"() {
     "use strict";
-    (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_09_s2fq.js", { otherChunks: ["chunks/node_modules_next_dist_esm_build_templates_edge-wrapper_0a9gg_0.js", "chunks/[root-of-the-server]__0_lzsr-._.js"], runtimeModuleIds: [38022] }]), (() => {
+    (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0w_ovm7.js", { otherChunks: ["chunks/[root-of-the-server]__0dtnnx1._.js", "chunks/[root-of-the-server]__0az2aw2._.js"], runtimeModuleIds: [38022] }]), (() => {
       let e;
       if (!Array.isArray(globalThis.TURBOPACK)) return;
       let t = ["NEXT_DEPLOYMENT_ID", "NEXT_CLIENT_ASSET_SUFFIX"];
@@ -4509,7 +4514,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
       function f(e2) {
         return { exports: {}, error: void 0, id: e2, namespaceObject: void 0 };
       }
-      function d(e2, t2) {
+      function h(e2, t2) {
         s(e2, "__esModule", { value: true }), a && s(e2, a, { value: "Module" });
         let r2 = 0;
         for (; r2 < t2.length; ) {
@@ -4520,12 +4525,12 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
         }
         Object.seal(e2);
       }
-      function h(e2, t2) {
+      function d(e2, t2) {
         (null != t2 ? c(this.c, t2) : this.m).exports = e2;
       }
       l.s = function(e2, t2) {
         let r2, n2;
-        null != t2 ? n2 = (r2 = c(this.c, t2)).exports : (r2 = this.m, n2 = this.e), r2.namespaceObject = n2, d(n2, e2);
+        null != t2 ? n2 = (r2 = c(this.c, t2)).exports : (r2 = this.m, n2 = this.e), r2.namespaceObject = n2, h(n2, e2);
       }, l.j = function(e2, t2) {
         var r2, n2;
         let u2, l2, a2;
@@ -4542,7 +4547,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
           return t3;
         } })), a2);
         "object" == typeof e2 && null !== e2 && s2.push(e2);
-      }, l.v = h, l.n = function(e2, t2) {
+      }, l.v = d, l.n = function(e2, t2) {
         let r2;
         (r2 = null != t2 ? c(this.c, t2) : this.m).exports = r2.namespaceObject = e2;
       };
@@ -4552,7 +4557,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
         for (let t3 = e2; ("object" == typeof t3 || "function" == typeof t3) && !m.includes(t3); t3 = p(t3)) for (let r3 of Object.getOwnPropertyNames(t3)) n2.push(r3, /* @__PURE__ */ function(e3, t4) {
           return () => e3[t4];
         }(e2, r3)), -1 === o2 && "default" === r3 && (o2 = n2.length - 1);
-        return r2 && o2 >= 0 || (o2 >= 0 ? n2.splice(o2, 1, 0, e2) : n2.push("default", 0, e2)), d(t2, n2), t2;
+        return r2 && o2 >= 0 || (o2 >= 0 ? n2.splice(o2, 1, 0, e2) : n2.push("default", 0, e2)), h(t2, n2), t2;
       }
       function y(e2) {
         return "function" == typeof e2 ? function(...t2) {
@@ -4571,10 +4576,10 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
         let r2 = e2.indexOf("?");
         return -1 !== r2 && (e2 = e2.substring(0, r2)), e2;
       }
-      function _(e2) {
+      function O(e2) {
         return "string" == typeof e2 ? e2 : e2.path;
       }
-      function O() {
+      function _() {
         let e2, t2;
         return { promise: new Promise((r2, n2) => {
           t2 = n2, e2 = r2;
@@ -4603,7 +4608,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
         e2 && 1 !== e2.status && (e2.status = 1, e2.forEach((e3) => e3.queueCount--), e2.forEach((e3) => e3.queueCount-- ? e3.queueCount++ : e3()));
       }
       l.a = function(e2, t2) {
-        let r2 = this.m, n2 = t2 ? Object.assign([], { status: -1 }) : void 0, o2 = /* @__PURE__ */ new Set(), { resolve: u2, reject: l2, promise: i2 } = O(), a2 = Object.assign(i2, { [j]: r2.exports, [k]: (e3) => {
+        let r2 = this.m, n2 = t2 ? Object.assign([], { status: -1 }) : void 0, o2 = /* @__PURE__ */ new Set(), { resolve: u2, reject: l2, promise: i2 } = _(), a2 = Object.assign(i2, { [j]: r2.exports, [k]: (e3) => {
           n2 && e3(n2), o2.forEach(e3), a2.catch(() => {
           });
         } }), s2 = { get: () => a2, set(e3) {
@@ -4627,7 +4632,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
           }), r3 = () => t3.map((e4) => {
             if (e4[C]) throw e4[C];
             return e4[j];
-          }), { promise: u3, resolve: l3 } = O(), i3 = Object.assign(() => l3(r3), { queueCount: 0 });
+          }), { promise: u3, resolve: l3 } = _(), i3 = Object.assign(() => l3(r3), { queueCount: 0 });
           function a3(e4) {
             e4 !== n2 && !o2.has(e4) && (o2.add(e4), e4 && 0 === e4.status && (i3.queueCount++, e4.push(i3)));
           }
@@ -4652,7 +4657,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
       let x = /* @__PURE__ */ new Map(), M = /* @__PURE__ */ new Map();
       async function $(e2, t2, r2) {
         let n2;
-        if ("string" == typeof r2) return q(e2, t2, A(r2));
+        if ("string" == typeof r2) return A(e2, t2, q(r2));
         let o2 = r2.included || [], u2 = o2.map((e3) => !!R.has(e3) || x.get(e3));
         if (u2.length > 0 && u2.every((e3) => e3)) return void await Promise.all(u2);
         let l2 = r2.moduleChunks || [], i2 = l2.map((e3) => M.get(e3)).filter((e3) => e3);
@@ -4661,12 +4666,12 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
           let r3 = /* @__PURE__ */ new Set();
           for (let e3 of l2) M.has(e3) || r3.add(e3);
           for (let n3 of r3) {
-            let r4 = q(e2, t2, A(n3));
+            let r4 = A(e2, t2, q(n3));
             M.set(n3, r4), i2.push(r4);
           }
           n2 = Promise.all(i2);
         } else {
-          for (let o3 of (n2 = q(e2, t2, A(r2.path)), l2)) M.has(o3) || M.set(o3, n2);
+          for (let o3 of (n2 = A(e2, t2, q(r2.path)), l2)) M.has(o3) || M.set(o3, n2);
         }
         for (let e3 of o2) x.has(e3) || x.set(e3, n2);
         await n2;
@@ -4675,7 +4680,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
         return $(n.Parent, this.m.id, e2);
       };
       let T = Promise.resolve(void 0), S = /* @__PURE__ */ new WeakMap();
-      function q(t2, r2, o2) {
+      function A(t2, r2, o2) {
         let u2 = e.loadChunkCached(t2, o2), l2 = S.get(u2);
         if (void 0 === l2) {
           let e2 = S.set.bind(S, u2, T);
@@ -4700,22 +4705,22 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
         }
         return l2;
       }
-      function A(e2) {
+      function q(e2) {
         return `${e2.split("/").map((e3) => encodeURIComponent(e3)).join("/")}`;
       }
       U.L = function(e2) {
-        return q(n.Parent, this.m.id, e2);
+        return A(n.Parent, this.m.id, e2);
       }, U.R = function(e2) {
         let t2 = this.r(e2);
         return t2?.default ?? t2;
       }, U.P = function(e2) {
         return `/ROOT/${e2 ?? ""}`;
       }, U.q = function(e2, t2) {
-        h.call(this, `${e2}`, t2);
+        d.call(this, `${e2}`, t2);
       }, U.b = function(e2, r2, n2, o2) {
-        let u2 = "SharedWorker" === e2.name, l2 = [n2.map((e3) => A(e3)).reverse(), ""];
+        let u2 = "SharedWorker" === e2.name, l2 = [n2.map((e3) => q(e3)).reverse(), ""];
         for (let e3 of t) l2.push(globalThis[e3]);
-        let i2 = new URL(A(r2), location.origin), a2 = JSON.stringify(l2);
+        let i2 = new URL(q(r2), location.origin), a2 = JSON.stringify(l2);
         return u2 ? i2.searchParams.set("params", a2) : i2.hash = "#params=" + encodeURIComponent(a2), new e2(i2, o2 ? { ...o2, type: void 0 } : void 0);
       };
       let N = /\.js(?:\?[^#]*)?(?:#.*)?$/;
@@ -4825,7 +4830,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
         }(r2), null != t2 && (0 === t2.otherChunks.length ? X(t2.runtimeModuleIds, r2) : function(e3, t3, r3) {
           let n2 = /* @__PURE__ */ new Set(), o2 = { runtimeModuleIds: r3, chunkPath: e3, requiredChunks: n2 };
           for (let e4 of t3) {
-            let t4 = _(e4);
+            let t4 = O(e4);
             if (F.has(t4)) continue;
             n2.add(t4);
             let r4 = D.get(t4);
@@ -4834,7 +4839,7 @@ var require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09
           0 === o2.requiredChunks.size && X(o2.runtimeModuleIds, o2.chunkPath);
         }(r2, t2.otherChunks.filter((e3) => {
           var t3;
-          return t3 = _(e3), N.test(t3);
+          return t3 = O(e3), N.test(t3);
         }), t2.runtimeModuleIds));
       }, loadChunkCached(e2, t2) {
         throw Error("chunk loading is not supported");
@@ -4899,9 +4904,9 @@ var init_edgeFunctionHandler = __esm({
     globalThis._ENTRIES = {};
     globalThis.self = globalThis;
     globalThis._ROUTES = [{ "name": "middleware", "page": "/", "regex": ["^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next|favicon|sitemap|robots|public|assets).*))(\\\\.json)?[\\/#\\?]?$"] }];
-    require_node_modules_next_dist_esm_build_templates_edge_wrapper_0a9gg_0();
-    require_root_of_the_server_0_lzsr();
-    require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_09_s2fq();
+    require_root_of_the_server_0dtnnx1();
+    require_root_of_the_server_0az2aw2();
+    require_turbopack_node_modules_next_dist_esm_build_templates_edge_wrapper_0w_ovm7();
   }
 });
 
@@ -5074,12 +5079,12 @@ var NEXT_DIR = path.join(__dirname, ".next");
 var OPEN_NEXT_DIR = path.join(__dirname, ".open-next");
 debug({ NEXT_DIR, OPEN_NEXT_DIR });
 var NextConfig = { "env": {}, "webpack": null, "typescript": { "ignoreBuildErrors": false }, "typedRoutes": false, "distDir": ".next", "cleanDistDir": true, "assetPrefix": "", "cacheMaxMemorySize": 52428800, "configOrigin": "next.config.ts", "useFileSystemPublicRoutes": true, "generateEtags": true, "pageExtensions": ["tsx", "ts", "jsx", "js"], "poweredByHeader": true, "compress": true, "images": { "deviceSizes": [640, 750, 828, 1080, 1200, 1920, 2048, 3840], "imageSizes": [32, 48, 64, 96, 128, 256, 384], "path": "/_next/image", "loader": "default", "loaderFile": "", "domains": [], "disableStaticImages": false, "minimumCacheTTL": 14400, "formats": ["image/webp"], "maximumRedirects": 3, "maximumResponseBody": 5e7, "dangerouslyAllowLocalIP": false, "dangerouslyAllowSVG": false, "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;", "contentDispositionType": "attachment", "localPatterns": [{ "pathname": "**", "search": "" }], "remotePatterns": [{ "protocol": "https", "hostname": "*.public.blob.vercel-storage.com" }], "qualities": [75], "unoptimized": false, "customCacheHandler": false }, "devIndicators": { "position": "bottom-left" }, "onDemandEntries": { "maxInactiveAge": 6e4, "pagesBufferLength": 5 }, "basePath": "", "sassOptions": {}, "trailingSlash": false, "i18n": null, "productionBrowserSourceMaps": false, "excludeDefaultMomentLocales": true, "reactProductionProfiling": false, "reactStrictMode": null, "reactMaxHeadersLength": 6e3, "httpAgentOptions": { "keepAlive": true }, "logging": { "serverFunctions": true, "browserToTerminal": "warn" }, "compiler": {}, "expireTime": 31536e3, "staticPageGenerationTimeout": 60, "output": "standalone", "modularizeImports": { "@mui/icons-material": { "transform": "@mui/icons-material/{{member}}" }, "lodash": { "transform": "lodash/{{member}}" } }, "outputFileTracingRoot": "/data/vercel-projects/rvroadlog", "cacheComponents": false, "cacheLife": { "default": { "stale": 300, "revalidate": 900, "expire": 4294967294 }, "seconds": { "stale": 30, "revalidate": 1, "expire": 60 }, "minutes": { "stale": 300, "revalidate": 60, "expire": 3600 }, "hours": { "stale": 300, "revalidate": 3600, "expire": 86400 }, "days": { "stale": 300, "revalidate": 86400, "expire": 604800 }, "weeks": { "stale": 300, "revalidate": 604800, "expire": 2592e3 }, "max": { "stale": 300, "revalidate": 2592e3, "expire": 31536e3 } }, "cacheHandlers": {}, "experimental": { "appNewScrollHandler": false, "useSkewCookie": false, "cssChunking": true, "multiZoneDraftMode": false, "appNavFailHandling": false, "prerenderEarlyExit": true, "serverMinification": true, "linkNoTouchStart": false, "caseSensitiveRoutes": false, "cachedNavigations": false, "partialFallbacks": false, "dynamicOnHover": false, "varyParams": false, "prefetchInlining": false, "preloadEntriesOnStart": true, "clientRouterFilter": true, "clientRouterFilterRedirects": false, "fetchCacheKeyPrefix": "", "proxyPrefetch": "flexible", "optimisticClientCache": true, "manualClientBasePath": false, "cpus": 31, "memoryBasedWorkersCount": false, "imgOptConcurrency": null, "imgOptTimeoutInSeconds": 7, "imgOptMaxInputPixels": 268402689, "imgOptSequentialRead": null, "imgOptSkipMetadata": null, "isrFlushToDisk": true, "workerThreads": false, "optimizeCss": false, "nextScriptWorkers": false, "scrollRestoration": false, "externalDir": false, "disableOptimizedLoading": false, "gzipSize": true, "craCompat": false, "esmExternals": true, "fullySpecified": false, "swcTraceProfiling": false, "forceSwcTransforms": false, "largePageDataBytes": 128e3, "typedEnv": false, "parallelServerCompiles": false, "parallelServerBuildTraces": false, "ppr": false, "authInterrupts": false, "webpackMemoryOptimizations": false, "optimizeServerReact": true, "strictRouteTypes": false, "viewTransition": false, "removeUncaughtErrorAndRejectionListeners": false, "validateRSCRequestHeaders": false, "staleTimes": { "dynamic": 0, "static": 300 }, "reactDebugChannel": true, "serverComponentsHmrCache": true, "staticGenerationMaxConcurrency": 8, "staticGenerationMinPagesPerWorker": 25, "transitionIndicator": false, "gestureTransition": false, "inlineCss": false, "useCache": false, "globalNotFound": false, "browserDebugInfoInTerminal": "warn", "lockDistDir": true, "proxyClientMaxBodySize": 10485760, "hideLogsAfterAbort": false, "mcpServer": true, "turbopackFileSystemCacheForDev": true, "turbopackFileSystemCacheForBuild": false, "turbopackInferModuleSideEffects": true, "turbopackPluginRuntimeStrategy": "childProcesses", "optimizePackageImports": ["lucide-react", "date-fns", "lodash-es", "ramda", "antd", "react-bootstrap", "ahooks", "@ant-design/icons", "@headlessui/react", "@headlessui-float/react", "@heroicons/react/20/solid", "@heroicons/react/24/solid", "@heroicons/react/24/outline", "@visx/visx", "@tremor/react", "rxjs", "@mui/material", "@mui/icons-material", "recharts", "react-use", "effect", "@effect/schema", "@effect/platform", "@effect/platform-node", "@effect/platform-browser", "@effect/platform-bun", "@effect/sql", "@effect/sql-mssql", "@effect/sql-mysql2", "@effect/sql-pg", "@effect/sql-sqlite-node", "@effect/sql-sqlite-bun", "@effect/sql-sqlite-wasm", "@effect/sql-sqlite-react-native", "@effect/rpc", "@effect/rpc-http", "@effect/typeclass", "@effect/experimental", "@effect/opentelemetry", "@material-ui/core", "@material-ui/icons", "@tabler/icons-react", "mui-core", "react-icons/ai", "react-icons/bi", "react-icons/bs", "react-icons/cg", "react-icons/ci", "react-icons/di", "react-icons/fa", "react-icons/fa6", "react-icons/fc", "react-icons/fi", "react-icons/gi", "react-icons/go", "react-icons/gr", "react-icons/hi", "react-icons/hi2", "react-icons/im", "react-icons/io", "react-icons/io5", "react-icons/lia", "react-icons/lib", "react-icons/lu", "react-icons/md", "react-icons/pi", "react-icons/ri", "react-icons/rx", "react-icons/si", "react-icons/sl", "react-icons/tb", "react-icons/tfi", "react-icons/ti", "react-icons/vsc", "react-icons/wi"], "trustHostHeader": false, "isExperimentalCompile": false }, "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight", "bundlePagesRouterDependencies": false, "configFileName": "next.config.ts", "turbopack": { "root": "/data/vercel-projects/rvroadlog" }, "distDirRoot": ".next" };
-var BuildId = "mB5Q9FQcgZw_nkrBCXb_n";
-var RoutesManifest = { "basePath": "", "rewrites": { "beforeFiles": [], "afterFiles": [], "fallback": [] }, "redirects": [{ "source": "/:path+/", "destination": "/:path+", "internal": true, "priority": true, "statusCode": 308, "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$" }], "routes": { "static": [{ "page": "/", "regex": "^/(?:/)?$", "routeKeys": {}, "namedRegex": "^/(?:/)?$" }, { "page": "/_global-error", "regex": "^/_global\\-error(?:/)?$", "routeKeys": {}, "namedRegex": "^/_global\\-error(?:/)?$" }, { "page": "/_not-found", "regex": "^/_not\\-found(?:/)?$", "routeKeys": {}, "namedRegex": "^/_not\\-found(?:/)?$" }, { "page": "/about", "regex": "^/about(?:/)?$", "routeKeys": {}, "namedRegex": "^/about(?:/)?$" }, { "page": "/api/health", "regex": "^/api/health(?:/)?$", "routeKeys": {}, "namedRegex": "^/api/health(?:/)?$" }, { "page": "/author", "regex": "^/author(?:/)?$", "routeKeys": {}, "namedRegex": "^/author(?:/)?$" }, { "page": "/contact", "regex": "^/contact(?:/)?$", "routeKeys": {}, "namedRegex": "^/contact(?:/)?$" }, { "page": "/privacy-policy", "regex": "^/privacy\\-policy(?:/)?$", "routeKeys": {}, "namedRegex": "^/privacy\\-policy(?:/)?$" }, { "page": "/sitemap/sitemapindex.xml", "regex": "^/sitemap/sitemapindex\\.xml(?:/)?$", "routeKeys": {}, "namedRegex": "^/sitemap/sitemapindex\\.xml(?:/)?$" }, { "page": "/sitemap.xml", "regex": "^/sitemap\\.xml(?:/)?$", "routeKeys": {}, "namedRegex": "^/sitemap\\.xml(?:/)?$" }, { "page": "/terms-of-service", "regex": "^/terms\\-of\\-service(?:/)?$", "routeKeys": {}, "namedRegex": "^/terms\\-of\\-service(?:/)?$" }], "dynamic": [{ "page": "/author/[slug]", "regex": "^/author/([^/]+?)(?:/)?$", "routeKeys": { "nxtPslug": "nxtPslug" }, "namedRegex": "^/author/(?<nxtPslug>[^/]+?)(?:/)?$" }, { "page": "/sitemap/[n]", "regex": "^/sitemap/([^/]+?)(?:/)?$", "routeKeys": { "nxtPn": "nxtPn" }, "namedRegex": "^/sitemap/(?<nxtPn>[^/]+?)(?:/)?$" }, { "page": "/[category]", "regex": "^/([^/]+?)(?:/)?$", "routeKeys": { "nxtPcategory": "nxtPcategory" }, "namedRegex": "^/(?<nxtPcategory>[^/]+?)(?:/)?$" }, { "page": "/[category]/page/[pageNum]", "regex": "^/([^/]+?)/page/([^/]+?)(?:/)?$", "routeKeys": { "nxtPcategory": "nxtPcategory", "nxtPpageNum": "nxtPpageNum" }, "namedRegex": "^/(?<nxtPcategory>[^/]+?)/page/(?<nxtPpageNum>[^/]+?)(?:/)?$" }, { "page": "/[category]/[slug]", "regex": "^/([^/]+?)/([^/]+?)(?:/)?$", "routeKeys": { "nxtPcategory": "nxtPcategory", "nxtPslug": "nxtPslug" }, "namedRegex": "^/(?<nxtPcategory>[^/]+?)/(?<nxtPslug>[^/]+?)(?:/)?$" }], "data": { "static": [], "dynamic": [] } }, "locales": [] };
+var BuildId = "s2f9YHvFv1TnlutAzMp0h";
+var RoutesManifest = { "basePath": "", "rewrites": { "beforeFiles": [], "afterFiles": [], "fallback": [] }, "redirects": [{ "source": "/:path+/", "destination": "/:path+", "internal": true, "priority": true, "statusCode": 308, "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$" }], "routes": { "static": [{ "page": "/", "regex": "^/(?:/)?$", "routeKeys": {}, "namedRegex": "^/(?:/)?$" }, { "page": "/_global-error", "regex": "^/_global\\-error(?:/)?$", "routeKeys": {}, "namedRegex": "^/_global\\-error(?:/)?$" }, { "page": "/_not-found", "regex": "^/_not\\-found(?:/)?$", "routeKeys": {}, "namedRegex": "^/_not\\-found(?:/)?$" }, { "page": "/api/health", "regex": "^/api/health(?:/)?$", "routeKeys": {}, "namedRegex": "^/api/health(?:/)?$" }, { "page": "/author", "regex": "^/author(?:/)?$", "routeKeys": {}, "namedRegex": "^/author(?:/)?$" }], "dynamic": [{ "page": "/author/[slug]", "regex": "^/author/([^/]+?)(?:/)?$", "routeKeys": { "nxtPslug": "nxtPslug" }, "namedRegex": "^/author/(?<nxtPslug>[^/]+?)(?:/)?$" }, { "page": "/[category]", "regex": "^/([^/]+?)(?:/)?$", "routeKeys": { "nxtPcategory": "nxtPcategory" }, "namedRegex": "^/(?<nxtPcategory>[^/]+?)(?:/)?$" }, { "page": "/[category]/page/[pageNum]", "regex": "^/([^/]+?)/page/([^/]+?)(?:/)?$", "routeKeys": { "nxtPcategory": "nxtPcategory", "nxtPpageNum": "nxtPpageNum" }, "namedRegex": "^/(?<nxtPcategory>[^/]+?)/page/(?<nxtPpageNum>[^/]+?)(?:/)?$" }, { "page": "/[category]/[slug]", "regex": "^/([^/]+?)/([^/]+?)(?:/)?$", "routeKeys": { "nxtPcategory": "nxtPcategory", "nxtPslug": "nxtPslug" }, "namedRegex": "^/(?<nxtPcategory>[^/]+?)/(?<nxtPslug>[^/]+?)(?:/)?$" }], "data": { "static": [], "dynamic": [] } }, "locales": [] };
 var ConfigHeaders = [];
-var PrerenderManifest = { "version": 4, "routes": { "/_global-error": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/_global-error", "dataRoute": "/_global-error.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/_not-found": { "initialStatus": 404, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/_not-found", "dataRoute": "/_not-found.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/about": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/about", "dataRoute": "/about.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/contact": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/contact", "dataRoute": "/contact.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/privacy-policy": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/privacy-policy", "dataRoute": "/privacy-policy.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/sitemap/sitemapindex.xml": { "initialHeaders": { "cache-control": "public, max-age=3600, s-maxage=3600", "content-type": "application/xml", "x-next-cache-tags": "_N_T_/layout,_N_T_/sitemap/layout,_N_T_/sitemap/sitemapindex.xml/layout,_N_T_/sitemap/sitemapindex.xml/route,_N_T_/sitemap/sitemapindex.xml" }, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": 3600, "initialExpireSeconds": 31536e3, "srcRoute": "/sitemap/sitemapindex.xml", "dataRoute": null, "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/terms-of-service": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/terms-of-service", "dataRoute": "/terms-of-service.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] } }, "dynamicRoutes": {}, "notFoundRoutes": [], "preview": { "previewModeId": "332b5d55093d92a99cf7b733c771ae6c", "previewModeSigningKey": "bbe4f9d764e46e50c7d8e171ebab6e46c624dde712d7e2d46868008ede0ff393", "previewModeEncryptionKey": "ca52f6047d8772f6682f69f976626e74b21ff529a26063d1e9efadbb5085e800" } };
-var MiddlewareManifest = { "version": 3, "middleware": { "/": { "files": ["server/edge/chunks/node_modules_next_dist_esm_build_templates_edge-wrapper_0a9gg_0.js", "server/edge/chunks/[root-of-the-server]__0_lzsr-._.js", "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_09_s2fq.js"], "name": "middleware", "page": "/", "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_09_s2fq.js", "matchers": [{ "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next|favicon|sitemap|robots|public|assets).*))(\\\\.json)?[\\/#\\?]?$", "originalSource": "/((?!api|_next|favicon|sitemap|robots|public|assets).*)" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "mB5Q9FQcgZw_nkrBCXb_n", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "otnP+W10P11VkrYQk+RMEgIYlXGvRoVsnwIch9GGzpA=", "__NEXT_PREVIEW_MODE_ID": "332b5d55093d92a99cf7b733c771ae6c", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "ca52f6047d8772f6682f69f976626e74b21ff529a26063d1e9efadbb5085e800", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "bbe4f9d764e46e50c7d8e171ebab6e46c624dde712d7e2d46868008ede0ff393" } } }, "sortedMiddleware": ["/"], "functions": {} };
-var AppPathRoutesManifest = { "/[category]/[slug]/page": "/[category]/[slug]", "/[category]/page": "/[category]", "/[category]/page/[pageNum]/page": "/[category]/page/[pageNum]", "/_global-error/page": "/_global-error", "/_not-found/page": "/_not-found", "/about/page": "/about", "/api/health/route": "/api/health", "/author/[slug]/page": "/author/[slug]", "/author/page": "/author", "/contact/page": "/contact", "/privacy-policy/page": "/privacy-policy", "/route": "/", "/sitemap.xml/route": "/sitemap.xml", "/sitemap/[n]/route": "/sitemap/[n]", "/sitemap/sitemapindex.xml/route": "/sitemap/sitemapindex.xml", "/terms-of-service/page": "/terms-of-service" };
+var PrerenderManifest = { "version": 4, "routes": { "/_global-error": { "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/_global-error", "dataRoute": "/_global-error.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] }, "/_not-found": { "initialStatus": 404, "experimentalBypassFor": [{ "type": "header", "key": "next-action" }, { "type": "header", "key": "content-type", "value": "multipart/form-data;.*" }], "initialRevalidateSeconds": false, "srcRoute": "/_not-found", "dataRoute": "/_not-found.rsc", "allowHeader": ["host", "x-matched-path", "x-prerender-revalidate", "x-prerender-revalidate-if-generated", "x-next-revalidated-tags", "x-next-revalidate-tag-token"] } }, "dynamicRoutes": {}, "notFoundRoutes": [], "preview": { "previewModeId": "332b5d55093d92a99cf7b733c771ae6c", "previewModeSigningKey": "bbe4f9d764e46e50c7d8e171ebab6e46c624dde712d7e2d46868008ede0ff393", "previewModeEncryptionKey": "ca52f6047d8772f6682f69f976626e74b21ff529a26063d1e9efadbb5085e800" } };
+var MiddlewareManifest = { "version": 3, "middleware": { "/": { "files": ["server/edge/chunks/[root-of-the-server]__0dtnnx1._.js", "server/edge/chunks/[root-of-the-server]__0az2aw2._.js", "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0w_ovm7.js"], "name": "middleware", "page": "/", "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0w_ovm7.js", "matchers": [{ "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next|favicon|sitemap|robots|public|assets).*))(\\\\.json)?[\\/#\\?]?$", "originalSource": "/((?!api|_next|favicon|sitemap|robots|public|assets).*)" }], "wasm": [], "assets": [], "env": { "__NEXT_BUILD_ID": "s2f9YHvFv1TnlutAzMp0h", "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "otnP+W10P11VkrYQk+RMEgIYlXGvRoVsnwIch9GGzpA=", "__NEXT_PREVIEW_MODE_ID": "332b5d55093d92a99cf7b733c771ae6c", "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "ca52f6047d8772f6682f69f976626e74b21ff529a26063d1e9efadbb5085e800", "__NEXT_PREVIEW_MODE_SIGNING_KEY": "bbe4f9d764e46e50c7d8e171ebab6e46c624dde712d7e2d46868008ede0ff393" } } }, "sortedMiddleware": ["/"], "functions": {} };
+var AppPathRoutesManifest = { "/[category]/[slug]/page": "/[category]/[slug]", "/[category]/page": "/[category]", "/[category]/page/[pageNum]/page": "/[category]/page/[pageNum]", "/_global-error/page": "/_global-error", "/_not-found/page": "/_not-found", "/api/health/route": "/api/health", "/author/[slug]/page": "/author/[slug]", "/author/page": "/author", "/route": "/" };
 var FunctionsConfigManifest = { "version": 1, "functions": {} };
 var PagesManifest = { "/404": "pages/404.html", "/500": "pages/500.html" };
 process.env.NEXT_BUILD_ID = BuildId;
