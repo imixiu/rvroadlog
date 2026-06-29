@@ -6,7 +6,7 @@ export const siteConfig = {
   description: "Explore the best RV destinations, road trip routes, camper reviews, and camping tips. RVRoadLog helps you plan unforgettable adventures on the open road.",
   tagline: "Adventure Awaits on Every Mile",
   url: "https://rvroadlog.com",
-  ogImage: "https://9bwbxubcyu3vbaiq.public.blob.vercel-storage.com/homepage/rvroadlog/hero-mGGI4MO1xdU0jjRYa5SCGs09Dy8b0Z.png",
+  ogImage: "https://s.alicdn.com/@sc02/kf/Ac30788de4c6446c0950c7397bb756ccby.jpg",
   colors: {
     primary: "#2d6a4f",
     primaryDark: "#1b4332",

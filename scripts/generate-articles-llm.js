@@ -1,10 +1,7 @@
 
 const https = require('https');
 const fs = require('fs');
-const { neon } = require('@neondatabase/serverless');
-
-const dbUrl = process.env.DATABASE_URL;
-const sql = neon(dbUrl);
+const { getPool, insertArticle: dbInsertArticle, getSlugs, close: closeDb } = require('/root/.hermes/lib/per_site_db');
 const SITE = 'rvroadlog';
 const keys = ["sk-b11580cc1fec4c2a814a8a97e3dfd7d1", "sk-92cb9115a4dc4e9a9fe55029ad3d8499", "sk-a85175f0690c43b38ba36b516fc467dd", "sk-fe0617ae27bf4617963ce1ee313ef529", "sk-29e90b9d426d482f9e8cc8c27f3c330e"];
 
@@ -131,8 +128,7 @@ async function generateArticle(idea, index) {
 
 async function main() {
   const ideas = JSON.parse(fs.readFileSync('/root/vercel-projects/rvroadlog/article_ideas.json','utf8'));
-  const existing = await sql`SELECT short_title FROM articles WHERE site = ${SITE}`;
-  const existingSlugs = new Set(existing.map(r => r.short_title));
+  const existingSlugs = await getSlugs(SITE);
   const pending = ideas.filter(i => !existingSlugs.has(i.slug));
   console.log(`Total: ${ideas.length}, Done: ${existingSlugs.size}, Pending: ${pending.length}`);
 
@@ -146,9 +142,11 @@ async function main() {
       const description = idea.prompt.substring(0, 155);
       try {
         const { html, score } = await generateArticle(idea, globalIdx);
-        await sql`INSERT INTO articles (site, type, title, short_title, body, author, description, is_online, published_time)
-          VALUES (${SITE}, ${idea.type}, ${title}, ${idea.slug}, ${html}, ${author}, ${description}, 'Y', NOW())
-          ON CONFLICT (site, short_title) DO UPDATE SET body = ${html}, description = ${description}`;
+        await dbInsertArticle(SITE, {
+          site: SITE, type: idea.type, short_title: idea.slug,
+          title, description, body: html, author,
+          is_online: 'Y', published_time: new Date()
+        });
         completed++;
         if (completed % 25 === 0) console.log(`Progress: ${completed}/${pending.length} (${score >= 70 ? '✅' : '⚠️ '+score})`);
         return true;
@@ -161,7 +159,9 @@ async function main() {
     await Promise.all(promises);
   }
   console.log(`\n=== DONE ===\nCompleted: ${completed}, Failed: ${failed}`);
-  const cnt = await sql`SELECT COUNT(*) as cnt FROM articles WHERE site = ${SITE}`;
-  console.log(`Total in DB: ${cnt[0].cnt}`);
+  const pool = getPool(SITE);
+  const countResult = await pool.query('SELECT COUNT(*) as cnt FROM articles WHERE site=$1', [SITE]);
+  console.log(`Total articles in DB: ${countResult.rows[0].cnt}`);
+  await closeDb();
 }
 main().catch(e => console.error('Fatal:', e));
